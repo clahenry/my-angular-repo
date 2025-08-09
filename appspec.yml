@@ -10,7 +10,7 @@ permissions:
     group: root
     mode: 755
     type: 
-      - files
+      - file
       - directory
 hooks: 
   ApplicationStart:
