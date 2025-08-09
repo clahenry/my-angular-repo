@@ -4,14 +4,14 @@ files:
   - source: dist/my-angular-project/
     destination: /var/www/html/my-angular-project
 permissions:
-- object: /var/www/html/my-angular-project
-  pattern: '**'
-  mode: '0755'
-  owner: ubuntu
-  group: ubuntu
-  type: 
-    - files
-    - directory
+  - object: /var/www/html/my-angular-project
+    pattern: '**'    
+    owner: root
+    group: root
+    mode: 755
+    type: 
+      - files
+      - directory
 hooks: 
   ApplicationStart:
     - location: deploy-scripts/application-start-hook.sh
